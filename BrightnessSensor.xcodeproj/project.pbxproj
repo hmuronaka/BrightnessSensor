@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		43A9E05DCA40CEF3D41E3D02 /* libPods-BrightnessSensor.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 361FB249B1BAA9614628932A /* libPods-BrightnessSensor.a */; };
 		D66B18051B1DDCF500F0A214 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D66B18041B1DDCF500F0A214 /* AppDelegate.swift */; };
 		D66B18071B1DDCF500F0A214 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D66B18061B1DDCF500F0A214 /* ViewController.swift */; };
 		D66B180A1B1DDCF500F0A214 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D66B18081B1DDCF500F0A214 /* Main.storyboard */; };
@@ -26,6 +27,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2258F9BC494092483A3321FD /* Pods-BrightnessSensor.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BrightnessSensor.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BrightnessSensor/Pods-BrightnessSensor.debug.xcconfig"; sourceTree = "<group>"; };
+		361FB249B1BAA9614628932A /* libPods-BrightnessSensor.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BrightnessSensor.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE57850444D83CAB51CB59F5 /* Pods-BrightnessSensor.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BrightnessSensor.release.xcconfig"; path = "Pods/Target Support Files/Pods-BrightnessSensor/Pods-BrightnessSensor.release.xcconfig"; sourceTree = "<group>"; };
 		D66B17FF1B1DDCF500F0A214 /* BrightnessSensor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BrightnessSensor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D66B18031B1DDCF500F0A214 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D66B18041B1DDCF500F0A214 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -36,6 +40,7 @@
 		D66B18141B1DDCF500F0A214 /* BrightnessSensorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BrightnessSensorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D66B18191B1DDCF500F0A214 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D66B181A1B1DDCF500F0A214 /* BrightnessSensorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrightnessSensorTests.swift; sourceTree = "<group>"; };
+		D66B18241B1DF4EC00F0A214 /* BrightnessSensor-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BrightnessSensor-Bridging-Header.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +48,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				43A9E05DCA40CEF3D41E3D02 /* libPods-BrightnessSensor.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,12 +62,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		62CC4FBE67441A0160370967 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				361FB249B1BAA9614628932A /* libPods-BrightnessSensor.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		972B05C7C818367D539EAFF7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2258F9BC494092483A3321FD /* Pods-BrightnessSensor.debug.xcconfig */,
+				BE57850444D83CAB51CB59F5 /* Pods-BrightnessSensor.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		D66B17F61B1DDCF500F0A214 = {
 			isa = PBXGroup;
 			children = (
 				D66B18011B1DDCF500F0A214 /* BrightnessSensor */,
 				D66B18171B1DDCF500F0A214 /* BrightnessSensorTests */,
 				D66B18001B1DDCF500F0A214 /* Products */,
+				972B05C7C818367D539EAFF7 /* Pods */,
+				62CC4FBE67441A0160370967 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -83,6 +108,7 @@
 				D66B180B1B1DDCF500F0A214 /* Images.xcassets */,
 				D66B180D1B1DDCF500F0A214 /* LaunchScreen.xib */,
 				D66B18021B1DDCF500F0A214 /* Supporting Files */,
+				D66B18241B1DF4EC00F0A214 /* BrightnessSensor-Bridging-Header.h */,
 			);
 			path = BrightnessSensor;
 			sourceTree = "<group>";
@@ -119,9 +145,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D66B181E1B1DDCF500F0A214 /* Build configuration list for PBXNativeTarget "BrightnessSensor" */;
 			buildPhases = (
+				B02502023FA36F3A9D045CC1 /* Check Pods Manifest.lock */,
 				D66B17FB1B1DDCF500F0A214 /* Sources */,
 				D66B17FC1B1DDCF500F0A214 /* Frameworks */,
 				D66B17FD1B1DDCF500F0A214 /* Resources */,
+				775C1B930796A0EFBA3C41B7 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -161,6 +189,12 @@
 				TargetAttributes = {
 					D66B17FE1B1DDCF500F0A214 = {
 						CreatedOnToolsVersion = 6.3.2;
+						DevelopmentTeam = C3BE3ZYRWA;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
 					};
 					D66B18131B1DDCF500F0A214 = {
 						CreatedOnToolsVersion = 6.3.2;
@@ -206,6 +240,39 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		775C1B930796A0EFBA3C41B7 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BrightnessSensor/Pods-BrightnessSensor-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B02502023FA36F3A9D045CC1 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D66B17FB1B1DDCF500F0A214 /* Sources */ = {
@@ -294,6 +361,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "d58852db-ad1f-431c-9345-4e3df6e9d6ea";
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -332,6 +400,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				PROVISIONING_PROFILE = "d58852db-ad1f-431c-9345-4e3df6e9d6ea";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -340,21 +409,32 @@
 		};
 		D66B181F1B1DDCF500F0A214 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2258F9BC494092483A3321FD /* Pods-BrightnessSensor.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = BrightnessSensor/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "BrightnessSensor/BrightnessSensor-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		D66B18201B1DDCF500F0A214 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BE57850444D83CAB51CB59F5 /* Pods-BrightnessSensor.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = BrightnessSensor/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "BrightnessSensor/BrightnessSensor-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -411,6 +491,7 @@
 				D66B18201B1DDCF500F0A214 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D66B18211B1DDCF500F0A214 /* Build configuration list for PBXNativeTarget "BrightnessSensorTests" */ = {
 			isa = XCConfigurationList;
@@ -419,6 +500,7 @@
 				D66B18231B1DDCF500F0A214 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
